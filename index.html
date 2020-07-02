@@ -1,0 +1,70 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TypeScript Refresher</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Open+Sans:wght@300;400&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<body>
+		<h1>Visitors Log</h1>
+		<form>
+			<div class="fieldRow">
+				<div class="muted">Basic Details</div>
+				<div class="field">
+					<label for="name">Name</label>
+					<input type="text" id="name" />
+				</div>
+				<div class="field">
+					<label for="doorNo">Door No</label>
+					<input type="text" id="doorNo" />
+				</div>
+				<div class="field">
+					<label for="purpose">Purpose</label>
+					<input type="text" id="purpose" />
+				</div>
+			</div>
+
+			<div class="fieldRow">
+				<div class="muted">Vehicle Details</div>
+
+				<div class="field">
+					<label for="type">Type</label>
+					<select id="type">
+						<option value="invoice">Invoice</option>
+						<option value="payment">Payment</option>
+					</select>
+				</div>
+				<div class="field">
+					<label for="vehicleNo">Vehicle No</label>
+					<input type="text" id="vehicleNo" />
+				</div>
+			</div>
+
+			<div class="fieldRow">
+				<div class="muted">Visit Duration</div>
+				<div class="field">
+					<label for="entryTime">Entry Time</label>
+					<input type="number" id="entryTime" />
+				</div>
+				<div class="field">
+					<label for="exitTime">Exit Time</label>
+					<input type="number" id="exitTime" />
+				</div>
+			</div>
+
+			<button>OK</button>
+		</form>
+
+		<div class="wrapper">
+			<!-- output list -->
+			<ul class="item-list"></ul>
+		</div>
+
+		<script src="App.js"></script>
+	</body>
+</html>
